@@ -27,7 +27,7 @@ window.OFFERS = [
     badge: "EID UL ADHA",
     badgeColor: "gold",
     title: "Scaling & Polishing — 20% Off",
-    saving: "Save 1700/- PKR",
+    offerPrice: "Save Rs. 1700/- (T&C apply)",
     description: "Professional scaling & polishing to remove plaque and tartar — leaving your teeth clean, healthy and shining. Eid ul Adha exclusive offer.",
     expiry: "Valid 20 May – 31 May only",
     cta: "Book Eid Offer"
