@@ -104,7 +104,16 @@ document.addEventListener('DOMContentLoaded', () => {
         const notes = formData.get('notes') || '';
 
         const body = `Name: ${name}%0AEmail: ${email}%0APhone: ${phone}%0AService: ${service}%0APreferred Date: ${date}%0APreferred Time: ${time}%0ANotes: ${notes}`;
-        window.location.href = `mailto:mahwashkhizran@gmail.com?subject=Appointment Request - ${service}&body=${body}`;
+        window.location.href = `https://wa.me/923109273166?text=` + encodeURIComponent(
+  `*New Appointment Request*\n\n` +
+  `*Name:* ${name}\n` +
+  `*Phone:* ${phone}\n` +
+  `*Service:* ${service}\n` +
+  `*Preferred Date:* ${date}\n` +
+  `*Preferred Time:* ${time}\n` +
+  `*Notes:* ${notes || 'None'}\n` +
+  (formData.get('applied_offer') ? `\n*🏷️ OFFER:* ${formData.get('applied_offer')}\n*Discount:* ${formData.get('offer_discount')}` : ``)
+);
 
         submitBtn.innerHTML = originalText;
         submitBtn.disabled = false;
