@@ -664,6 +664,8 @@ p  { font-size: 0.95rem; line-height: 1.75; color: var(--text-mid); }
   .form-row { grid-template-columns: 1fr; }
   .hero-image { display: none; }
   .hero-content { max-width: 100%; }
+   .hero-btns { flex-direction: column; align-items: flex-start; gap: 10px; }
+  .hero-btns .btn { width: 100%; text-align: center; justify-content: center; }
   .journey-steps { grid-template-columns: 1fr 1fr; }
   .doctor-stats { flex-direction: column; gap: 16px; }
 }
