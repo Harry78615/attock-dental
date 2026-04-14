@@ -1,0 +1,288 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Services — Attock Dental Clinic</title>
+  <meta name="description" content="Explore all dental services at Attock Dental Clinic — from routine check-ups to cosmetic dentistry, braces, whitening, and paediatric care." />
+  <link rel="icon" type="image/png" href="assets/logo.png" />
+  <link rel="stylesheet" href="css/style.css" />
+  <style>
+    /* Extra styles for FAQ */
+    .faq-section { background: var(--bg-section); }
+    .faq-list { margin-top: 40px; display: flex; flex-direction: column; gap: 12px; max-width: 760px; margin-inline: auto; }
+    .faq-item { background: var(--white); border: 1px solid var(--border); border-radius: var(--r-md); overflow: hidden; transition: var(--transition); }
+    .faq-item.open { border-color: var(--blue); }
+    .faq-toggle { width: 100%; display: flex; justify-content: space-between; align-items: center; padding: 20px 24px; background: none; font-size: 0.9rem; font-weight: 600; color: var(--text-primary); text-align: left; gap: 16px; }
+    .faq-toggle:hover { color: var(--navy); }
+    .faq-icon { font-size: 1.2rem; color: var(--blue); flex-shrink: 0; transition: var(--transition); }
+    .faq-item.open .faq-icon { transform: rotate(45deg); }
+    .faq-answer { max-height: 0; overflow: hidden; transition: max-height 0.35s var(--ease); }
+    .faq-answer-inner { padding: 0 24px 20px; font-size: 0.875rem; color: var(--text-mid); line-height: 1.75; }
+  </style>
+</head>
+<body>
+
+  <!-- NAVBAR -->
+  <nav class="navbar">
+    <div class="navbar-inner">
+      <a href="index.html" class="navbar-logo">
+        <img src="assets/logo.png" alt="Attock Dental Clinic" />
+      </a>
+      <ul class="nav-links">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="services.html">Services</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="book.html" class="btn btn-primary nav-cta">Book Now</a></li>
+      </ul>
+      <button class="hamburger" aria-label="Toggle menu"><span></span><span></span><span></span></button>
+    </div>
+  </nav>
+  <div class="mobile-menu">
+    <a href="index.html">Home</a>
+    <a href="services.html">Services</a>
+    <a href="about.html">About</a>
+    <a href="book.html" class="btn btn-primary">Book Appointment</a>
+  </div>
+
+  <div class="page-wrapper">
+
+    <!-- HERO -->
+    <section class="hero-page" style="padding:90px 0 60px;">
+      <div class="container">
+        <div class="grid-2" style="align-items:center; gap:50px;">
+          <div>
+            <div class="badge"><span class="badge-dot"></span>Premium Dental Care</div>
+            <h1>Elevated Care for<br/>Your Smile</h1>
+            <p style="max-width:460px; margin-top:16px; font-size:1rem;">Experience a new standard of dental wellness where clinical precision meets compassionate care. Our treatments are designed for lasting health and natural beauty.</p>
+            <div class="hero-btns" style="margin-top:28px;">
+              <a href="book.html" class="btn btn-primary">Book Appointment</a>
+              <a href="#faq" class="btn btn-outline">Patient FAQ</a>
+            </div>
+          </div>
+          <div style="display:flex; justify-content:center;">
+            <div style="background:linear-gradient(135deg,var(--navy) 0%, var(--navy-light) 100%); border-radius:var(--r-xl); height:380px; width:100%; max-width:420px; display:flex; align-items:center; justify-content:center; position:relative; overflow:hidden; box-shadow:var(--shadow-lg);">
+              <div style="position:absolute; inset:0; background:linear-gradient(to bottom, transparent 40%, rgba(14,34,71,0.7));"></div>
+              <div style="font-size:6rem; opacity:0.3;">🦷</div>
+              <div style="position:absolute; bottom:24px; left:24px;">
+                <div style="background:white; border-radius:var(--r-sm); padding:12px 18px; display:flex; align-items:center; gap:10px; box-shadow:var(--shadow-md);">
+                  <span style="color:var(--gold); font-size:1.2rem;">✓</span>
+                  <div>
+                    <strong style="font-size:0.82rem; display:block; color:var(--text-primary);">Certified Excellence</strong>
+                    <span style="font-size:0.72rem; color:var(--text-light);">Trusted by families across Attock</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- NEWS TICKER -->
+    <section id="news-ticker" class="updates-section"></section>
+
+    <!-- SPECIALTIES GRID -->
+    <section class="section" id="services">
+      <div class="container">
+        <div class="section-header reveal">
+          <h2>Our Specialties</h2>
+          <div class="divider-line"></div>
+          <p class="section-subtitle">Comprehensive dental care covering every aspect of your oral health.</p>
+        </div>
+        <div class="services-full-grid">
+
+          <div class="service-card-full reveal">
+            <div class="service-icon-wrap" style="background:#EEF4FB;">🩺</div>
+            <h3>General Consultation</h3>
+            <p>Comprehensive oral examination with a personalised treatment plan to guide your unique dental health journey.</p>
+            <ul class="bullet-list">
+              <li>Full oral health assessment</li>
+              <li>Digital X-ray imaging</li>
+              <li>Treatment planning & advice</li>
+            </ul>
+          </div>
+
+          <div class="service-card-full reveal" style="transition-delay:0.05s">
+            <div class="service-icon-wrap" style="background:#FFF8EE;">🫧</div>
+            <h3>Routine Cleaning & Polishing</h3>
+            <p>Advanced prophylactic therapy and high-luster polishing for a radiant, healthy smile and optimal gum health.</p>
+            <ul class="bullet-list">
+              <li>Ultrasonic scaling & cleaning</li>
+              <li>Plaque & tartar removal</li>
+              <li>Professional polishing</li>
+            </ul>
+          </div>
+
+          <div class="service-card-full reveal" style="transition-delay:0.1s">
+            <div class="service-icon-wrap" style="background:#EEFAF4;">✨</div>
+            <h3>Teeth Whitening</h3>
+            <p>Clinical-grade whitening treatments designed to deliver a radiant smile while preserving your enamel integrity.</p>
+            <ul class="bullet-list">
+              <li>In-clinic whitening session</li>
+              <li>Take-home whitening kits</li>
+              <li>Safe, pH-balanced formulas</li>
+            </ul>
+          </div>
+
+          <div class="service-card-full reveal" style="transition-delay:0.15s">
+            <div class="service-icon-wrap" style="background:#F0EEF8;">😊</div>
+            <h3>Braces & Orthodontics</h3>
+            <p>Precise orthodontic alignment using modern techniques. Dr. Mahwash has specialist D-Ortho training for complex cases.</p>
+            <ul class="bullet-list">
+              <li>Metal & ceramic braces</li>
+              <li>Invisalign clear aligners</li>
+              <li>Retainer fitting & follow-up</li>
+            </ul>
+          </div>
+
+          <div class="service-card-full reveal" style="transition-delay:0.2s">
+            <div class="service-icon-wrap" style="background:#FFF3F0;">🔧</div>
+            <h3>Tooth Extraction</h3>
+            <p>Gentle, minimally invasive removal techniques focused on patient comfort and quick healing, including wisdom teeth.</p>
+            <ul class="bullet-list">
+              <li>Simple & surgical extractions</li>
+              <li>Wisdom tooth management</li>
+              <li>Painless anaesthesia technique</li>
+            </ul>
+          </div>
+
+          <div class="service-card-full reveal" style="transition-delay:0.25s">
+            <div class="service-icon-wrap" style="background:#EEFBF8;">🎨</div>
+            <h3>Cosmetic Dentistry</h3>
+            <p>Masterpiece smiles crafted with precision. Enhance your natural beauty with carefully chosen aesthetic procedures.</p>
+            <ul class="bullet-list">
+              <li>Porcelain veneers & laminates</li>
+              <li>Composite bonding</li>
+              <li>Smile makeovers</li>
+            </ul>
+          </div>
+
+          <div class="service-card-full reveal" style="transition-delay:0.3s">
+            <div class="service-icon-wrap" style="background:#EEF4FB;">🛠️</div>
+            <h3>Restorative Care</h3>
+            <p>Repair and rebuild with advanced technology. We restore function and aesthetics seamlessly using modern materials.</p>
+            <ul class="bullet-list">
+              <li>Fillings (tooth-coloured)</li>
+              <li>Crowns & bridges</li>
+              <li>Root canal therapy</li>
+            </ul>
+          </div>
+
+          <div class="service-card-full reveal" style="transition-delay:0.35s">
+            <div class="service-icon-wrap" style="background:#FFF8EE;">🧒</div>
+            <h3>Paediatric Dentistry</h3>
+            <p>Gentle, child-friendly dental care that makes dental visits a positive experience for children from an early age.</p>
+            <ul class="bullet-list">
+              <li>Child-friendly examinations</li>
+              <li>Fluoride treatments</li>
+              <li>Dental education & hygiene</li>
+            </ul>
+          </div>
+
+          <div class="service-card-full reveal" style="transition-delay:0.4s; border: 2px solid var(--navy); background: var(--navy);">
+            <div class="service-icon-wrap" style="background:rgba(255,255,255,0.15);">📋</div>
+            <h3 style="color:white;">Not Sure Where to Start?</h3>
+            <p style="color:rgba(255,255,255,0.75);">Book a general consultation and Dr. Mahwash will assess your oral health and recommend the right treatment plan for you.</p>
+            <a href="book.html" class="btn btn-primary" style="margin-top:20px; display:inline-flex;">Book Consultation →</a>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- FAQ -->
+    <section class="section faq-section" id="faq">
+      <div class="container">
+        <div class="section-header reveal">
+          <h2>Patient FAQ</h2>
+          <p class="section-subtitle">Common questions about your visit to Attock Dental Clinic.</p>
+        </div>
+        <div class="faq-list">
+          <div class="faq-item reveal">
+            <button class="faq-toggle">How often should I get a dental check-up? <span class="faq-icon">+</span></button>
+            <div class="faq-answer"><div class="faq-answer-inner">We recommend a routine check-up and cleaning every 6 months. This allows us to detect any issues early and keep your teeth and gums in optimal health. Some patients with specific concerns may need more frequent visits.</div></div>
+          </div>
+          <div class="faq-item reveal">
+            <button class="faq-toggle">Are the procedures painful? <span class="faq-icon">+</span></button>
+            <div class="faq-answer"><div class="faq-answer-inner">We prioritise your comfort above everything. Most procedures are performed with local anaesthetic, and Dr. Mahwash uses gentle techniques to minimise any discomfort. Many patients are pleasantly surprised at how comfortable their treatment is.</div></div>
+          </div>
+          <div class="faq-item reveal">
+            <button class="faq-toggle">Can I bring my child to the clinic? <span class="faq-icon">+</span></button>
+            <div class="faq-answer"><div class="faq-answer-inner">Absolutely. We offer dedicated paediatric dental care. Dr. Mahwash is experienced with children and creates a calm, friendly atmosphere to make visits positive and stress-free for young patients.</div></div>
+          </div>
+          <div class="faq-item reveal">
+            <button class="faq-toggle">Do you offer braces or Invisalign? <span class="faq-icon">+</span></button>
+            <div class="faq-answer"><div class="faq-answer-inner">Yes. Dr. Mahwash holds a D-Ortho specialist qualification and offers both traditional metal/ceramic braces and clear aligner options. She will assess your case and recommend the most suitable option during a consultation.</div></div>
+          </div>
+          <div class="faq-item reveal">
+            <button class="faq-toggle">How do I book an appointment? <span class="faq-icon">+</span></button>
+            <div class="faq-answer"><div class="faq-answer-inner">You can book online using our appointment form on the Book page, or call us directly on +92 310 9273166. We'll confirm your slot within 24 hours. Walk-ins are also welcome during clinic hours.</div></div>
+          </div>
+          <div class="faq-item reveal">
+            <button class="faq-toggle">What are your opening hours? <span class="faq-icon">+</span></button>
+            <div class="faq-answer"><div class="faq-answer-inner">We are open Monday, Tuesday, Wednesday, and Sunday: 10am–1pm and 5–7:30pm. Thursday is morning only (10am–1pm). Saturday runs 10am–1:30pm and 5–7:30pm. Friday is our weekly rest day.</div></div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- CTA -->
+    <section class="cta-section">
+      <div class="container">
+        <div class="cta-banner reveal">
+          <div class="cta-inner">
+            <h2>Ready to Transform Your Dental Experience?</h2>
+            <p>Consult with Dr. Mahwash Khizran to create your personalised treatment plan today.</p>
+            <div class="cta-btns">
+              <a href="book.html" class="btn btn-primary btn-lg">Book Appointment</a>
+              <a href="tel:+923109273166" class="btn btn-outline-white">📞 +92 310 9273166</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- FOOTER -->
+    <footer class="footer">
+      <div class="container">
+        <div class="footer-grid">
+          <div class="footer-brand">
+            <img src="assets/logo.png" alt="Attock Dental Clinic" />
+            <p>Providing high-quality dental services in a calm, modern environment — serving Kamra Kalan and all of Attock.</p>
+          </div>
+          <div class="footer-col">
+            <h5>Navigation</h5>
+            <ul>
+              <li><a href="index.html">Home</a></li>
+              <li><a href="services.html">Services</a></li>
+              <li><a href="about.html">About</a></li>
+              <li><a href="book.html">Book Appointment</a></li>
+            </ul>
+          </div>
+          <div class="footer-col">
+            <h5>Contact Details</h5>
+            <div class="footer-contact-item"><span class="icon">📍</span><span>Q9P5+QHG, Road, Kamra Kalan, 43350</span></div>
+            <div class="footer-contact-item"><span class="icon">📞</span><span><a href="tel:+923109273166" style="color:inherit;">+92 310 9273166</a></span></div>
+            <div class="footer-contact-item"><span class="icon">✉️</span><span><a href="mailto:mahwashkhizran@gmail.com" style="color:inherit;">mahwashkhizran@gmail.com</a></span></div>
+          </div>
+          <div class="footer-col">
+            <h5>Operating Hours</h5>
+            <div class="footer-hours-row"><span>Mon, Tue, Wed, Sun</span><span>10am–1pm | 5–7:30pm</span></div>
+            <div class="footer-hours-row"><span>Thursday</span><span>10am–1pm only</span></div>
+            <div class="footer-hours-row closed"><span>Friday</span><span>Closed</span></div>
+            <div class="footer-hours-row"><span>Saturday</span><span>10am–1:30pm | 5–7:30pm</span></div>
+          </div>
+        </div>
+        <div class="footer-bottom">
+          <span class="footer-copyright">© 2024 Attock Dental Clinic. All rights reserved. | attockdental.site</span>
+        </div>
+      </div>
+    </footer>
+
+  </div>
+  <script src="data/content.js"></script>
+  <script src="js/dynamic.js"></script>
+  <script src="js/main.js"></script>
+</body>
+</html>
