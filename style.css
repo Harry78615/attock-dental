@@ -106,7 +106,14 @@ p  { font-size: 0.95rem; line-height: 1.75; color: var(--text-mid); }
 .navbar.scrolled { border-bottom-color: var(--border); box-shadow: var(--shadow-sm); }
 .navbar-inner { max-width: 1160px; margin: 0 auto; width: 100%; display: flex; align-items: center; justify-content: space-between; }
 .navbar-logo { display: flex; align-items: center; gap: 10px; }
-.navbar-logo img { height: 72px !important; width: auto !important; object-fit: contain; display: block; }
+.navbar-logo img {
+  height: 72px !important;
+  width: auto !important;
+  object-fit: contain !important;
+  display: block !important;
+  opacity: 1 !important;
+  visibility: visible !important;
+}
 .nav-links { display: flex; align-items: center; gap: 36px; }
 .nav-links a { font-size: 0.875rem; font-weight: 500; color: var(--text-mid); transition: var(--transition); position: relative; }
 .nav-links a:hover, .nav-links a.active { color: var(--navy); }
@@ -298,7 +305,18 @@ p  { font-size: 0.95rem; line-height: 1.75; color: var(--text-mid); }
 /* ============ FOOTER ============ */
 .footer { background: var(--text-primary); color: rgba(255,255,255,0.85); padding: 60px 0 30px; }
 .footer-grid { display: grid; grid-template-columns: 1.5fr 1fr 1fr 1.5fr; gap: 40px; margin-bottom: 40px; }
-.footer-brand img { height: 72px; margin-bottom: 14px; background: white; padding: 8px 12px; border-radius: 10px; display: block; object-fit: contain; }
+.footer-brand img {
+  height: 72px !important;
+  width: auto !important;
+  display: block !important;
+  object-fit: contain !important;
+  opacity: 1 !important;
+  visibility: visible !important;
+  background: white;
+  padding: 8px 12px;
+  border-radius: 10px;
+  margin-bottom: 14px;
+}
 .footer-brand p { font-size: 0.82rem; color: rgba(255,255,255,0.55); line-height: 1.7; max-width: 240px; }
 .footer-col h5 { font-family: 'DM Sans', sans-serif; font-size: 0.8rem; font-weight: 600; letter-spacing: 0.08em; text-transform: uppercase; color: rgba(255,255,255,0.45); margin-bottom: 16px; }
 .footer-col ul li { margin-bottom: 10px; }
